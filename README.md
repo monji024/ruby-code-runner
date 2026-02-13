@@ -2,17 +2,17 @@
   <h1>code-runner</h1>
   <p><strong>Run code in 40+ programming languages – simple, fast, and perfect for learning!</strong></p>
   
+  <a href="https://rubygems.org/gems/ruby-code-runner">
+    <img src="https://img.shields.io/gem/v/ruby-code-runner?color=red&style=flat-square" alt="Gem Version">
+  </a>
+  <a href="https://github.com/monji024/ruby-code-runner">
+    <img src="https://img.shields.io/github/stars/monji024/ruby-code-runner?style=flat-square" alt="GitHub Stars">
+  </a>
+  <a href="https://github.com/monji024/ruby-code-runner/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/monji024/ruby-code-runner?style=flat-square" alt="MIT License">
+  </a>
   <a href="https://rubygems.org/gems/code-runner">
-    <img src="https://img.shields.io/gem/v/code-runner?color=red&style=flat-square" alt="Gem Version">
-  </a>
-  <a href="https://github.com/monji024/code-runner">
-    <img src="https://img.shields.io/github/stars/monji024/code-runner?style=flat-square" alt="GitHub Stars">
-  </a>
-  <a href="https://github.com/monji024/code-runner/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/monji024/code-runner?style=flat-square" alt="MIT License">
-  </a>
-  <a href="https://rubygems.org/gems/code-runner">
-    <img src="https://img.shields.io/gem/dt/code-runner?style=flat-square" alt="Downloads">
+    <img src="https://img.shields.io/gem/dt/ruby-code-runner?style=flat-square" alt="Downloads">
   </a>
 </div>
 
@@ -37,36 +37,40 @@ Here's what you can do with Code-Runner:
 gem install code-runner
 ```
 
+```Ruby
 require 'code-runner'
 
 # Ruby
 result = CodeRunner.run('puts "Hello World!"', 'ruby')
 puts result[:output]  # Hello World!
+```
 
+```Ruby
 # Python
 result = CodeRunner.run('print("Hello Python!")', 'python')
 puts result[:output]  # Hello Python!
-
+```
+```Ruby
 # JavaScript
 result = CodeRunner.run('console.log("Hello JS!")', 'javascript')
 puts result[:output]  # Hello JS!
+```
 
-
-Examples
 ## 1. Simple math
-ruby
 
+```Ruby
 # Ruby
 result = CodeRunner.run('puts 2 + 2', 'ruby')
 puts result[:output]  # 4
-
+```
+```Ruby
 # Python
 result = CodeRunner.run('print(3 * 4)', 'python')
 puts result[:output]  # 12
-
+```
 ## 2. Reading input (stdin)
-ruby
 
+```Ruby
 code = <<~PYTHON
 name = input("What's your name? ")
 print(f"Hello {name}!")
@@ -74,18 +78,19 @@ PYTHON
 
 result = CodeRunner.run(code, 'python', stdin: "John")
 puts result[:output]
+```
 # What's your name? Hello John!
 
 ## 3. Command line arguments
-ruby
 
+```Ruby
 code = 'puts "Args: #{ARGV.join(", ")}"'
 result = CodeRunner.run(code, 'ruby', args: ["hello", "world"])
 puts result[:output]  # Args: hello, world
-
+```
 ## 4. Error handling
-ruby
 
+```Ruby
 result = CodeRunner.run('print(1 / 0)', 'python')
 
 if result[:success]
@@ -93,7 +98,7 @@ if result[:success]
 else
   puts "err : #{result[:error]}"
 end
-
+```
 
 ## Supported Languages
 
@@ -130,8 +135,6 @@ full list:
 
 
 # 📬 Get in Touch
-
-I'd love to hear from you! Here's how you can reach me:
 
 | | |
 |---|---|
