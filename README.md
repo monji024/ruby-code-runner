@@ -76,10 +76,10 @@ name = input("What's your name? ")
 print(f"Hello {name}!")
 PYTHON
 
-result = CodeRunner.run(code, 'python', stdin: "John")
+result = CodeRunner.run(code, 'python', stdin: "Monji")
 puts result[:output]
 ```
-# What's your name? Hello John!
+# What's your name? Hello Monji!
 
 ## 3. Command line arguments
 
