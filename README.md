@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>code-runner</h1>
+  <h1>ruby-code-runner</h1>
   <p><strong>Run code in 40+ programming languages – simple, fast, and perfect for learning!</strong></p>
   
   <a href="https://rubygems.org/gems/ruby-code-runner">
@@ -11,7 +11,7 @@
   <a href="https://github.com/monji024/ruby-code-runner/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/monji024/ruby-code-runner?style=flat-square" alt="MIT License">
   </a>
-  <a href="https://rubygems.org/gems/code-runner">
+  <a href="https://rubygems.org/gems/ruby-code-runner">
     <img src="https://img.shields.io/gem/dt/ruby-code-runner?style=flat-square" alt="Downloads">
   </a>
 </div>
@@ -34,7 +34,7 @@ Here's what you can do with Code-Runner:
 ## Installation
 
 ```bash
-gem install code-runner
+gem install ruby-code-runner
 ```
 
 ```Ruby
@@ -139,7 +139,7 @@ full list:
 | | |
 |---|---|
 | **GitHub** | [monji024](https://github.com/monji024) |
-| **RubyGems** | [code-runner](https://rubygems.org/gems/code-runner) |
+| **RubyGems** | [code-runner](https://rubygems.org/gems/ruby-code-runner) |
 
 ---
 
