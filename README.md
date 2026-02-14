@@ -148,4 +148,4 @@ full list:
 If you find this gem useful, here's how you can support me:
 
 ## ⭐ Star it on GitHub
-Visit [github.com/monji024/code-runner](https://github.com/monji024/code-runner) and click the ★ button.
+Visit [github.com/monji024/code-runner](https://github.com/monji024/ruby-code-runner) and click the ★ button.
